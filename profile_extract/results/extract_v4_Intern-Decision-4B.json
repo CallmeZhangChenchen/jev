@@ -1,0 +1,1925 @@
+{
+  "file": "v4",
+  "model": "Intern-Decision-4B",
+  "fields": {
+    "车辆评估状态": {
+      "correct": 80,
+      "total": 100,
+      "acc": 80.0
+    },
+    "预审状态": {
+      "correct": 33,
+      "total": 100,
+      "acc": 33.0
+    }
+  },
+  "micro": {
+    "correct": 113,
+    "total": 200
+  },
+  "errors": 0,
+  "avg_latency_ms": 1284,
+  "results": [
+    {
+      "session_id": "0133473fb0a04a079dc5083d4737eb34",
+      "latency_ms": 2366,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8815938286018441,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "预审拒绝",
+          "confidence": 0.4656593206222031,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "361568343d5149569fe4faf88dd2ee46",
+      "latency_ms": 2612,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.608060011110835,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "预审通过",
+          "pred": "预审通过",
+          "confidence": 0.9254056293186882,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "509babbb60554608b2d3aa5c6a10f68d",
+      "latency_ms": 2367,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "二维码已发送",
+          "confidence": 0.375769763408387,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "51ab2c692e8643ffa38b4d0eff59b1d7",
+      "latency_ms": 2689,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.9248060506082927,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.44600998384227086,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "899f40aec9ca4a37b1737e31f71d783b",
+      "latency_ms": 2367,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8879876242264044,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "未发送二维码",
+          "confidence": 0.5546191566148186,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "8d188f566b4d4144bc4eeddd9d745aae",
+      "latency_ms": 2611,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.5469149563843178,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.5528858593679644,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "8ddf129ff4f2437baf9237e36e470dae",
+      "latency_ms": 2690,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.9156019658234928,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "未发送二维码",
+          "confidence": 0.33938249282084826,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "ca2676cb9bb94bf7add59f036b372865",
+      "latency_ms": 2625,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.4144442150009437,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "e0daa4fa85124811b4e06d374852b11a",
+      "latency_ms": 852,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.43182681707025494,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "e8b466b9eb48419091f056a0cd500608",
+      "latency_ms": 832,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8678561574454184,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.7418853443467867,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "eb31c18a738b4cc2ac98df78b887b22c",
+      "latency_ms": 967,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.608060011110835,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审拒绝",
+          "confidence": 0.5667243369628013,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "eff3d99a730f4bf99d931720d999d981",
+      "latency_ms": 1327,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8815938286018441,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "未发送二维码",
+          "confidence": 0.5031696671686978,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "fa3b9d9add61459d8eca4717c3842751",
+      "latency_ms": 1360,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "预审拒绝",
+          "confidence": 0.6326401357768544,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0012229923d54577954318e84cdcc99b",
+      "latency_ms": 1313,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.9530872035074577,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审拒绝",
+          "confidence": 0.37703561742633895,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "001cc89199cd49ab9a4010f5a83a1794",
+      "latency_ms": 1320,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.637525577991227,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.3921422075487473,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0052b42deebe48d7be780a9c1381cd4d",
+      "latency_ms": 1319,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.8815938286018441,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.3303154850971732,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "006a1ff48e8d4e0ca121a4d01e2c2da1",
+      "latency_ms": 806,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6518947636686268,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.3960549213635296,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "0086d5fdb5be4d309808bdcf82d523c8",
+      "latency_ms": 753,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.40522087489338804,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "00a5b16ba10a47c992f31986ce324f95",
+      "latency_ms": 772,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.40755351756585906,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "00d473ae144d4ab187e5f9d95a0f0a47",
+      "latency_ms": 1426,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "正在评估中",
+          "pred": "正在评估中",
+          "confidence": 0.767101934678807,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.2958843563334549,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "012f95a68a4e4c698365311758447d81",
+      "latency_ms": 1426,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.637525577991227,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.3909263804305503,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "017b66ac3d424dbc90b2947fead5ffe9",
+      "latency_ms": 946,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.608060011110835,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "二维码已发送",
+          "confidence": 0.33751905521292136,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "018113cc6d504924bdb5a924e0e4f43c",
+      "latency_ms": 947,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8275619327448428,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.4016110518776549,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "018a56f8cfef4264b065072ba3235508",
+      "latency_ms": 1360,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.9053865123447689,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.4162707351131688,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "019a0523d93944eda2a41b893c98c215",
+      "latency_ms": 1356,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.799028310455341,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审通过",
+          "pred": "预审拒绝",
+          "confidence": 0.8173780039871822,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "01a5599e31ca43de9dfc6739c0e8c92c",
+      "latency_ms": 1356,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.6518947636686268,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "预审拒绝",
+          "confidence": 0.3862749936043391,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "01a5bce3f58a4d108d8998f6bb5872b4",
+      "latency_ms": 928,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.41608657475649574,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "01b8ac6e435a4b2f8f2008046bdf0550",
+      "latency_ms": 655,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.7064759712765732,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.4008956656687295,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "01e8929b5cf14eef95d4c391e15c5089",
+      "latency_ms": 655,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "正在评估中",
+          "pred": "未提供",
+          "confidence": 0.637525577991227,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.39219009608331135,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "01f3c348a4364d5eb52ee8f3e62f5406",
+      "latency_ms": 539,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.5624106420506467,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "二维码已发送",
+          "confidence": 0.3834433926938608,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "01faa7f287db4cfabaacebba5824b161",
+      "latency_ms": 1335,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.8940776460411956,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.37632138530222864,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0213550d1f524be184b2285ccfd3efd8",
+      "latency_ms": 1331,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.799028310455341,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "预审拒绝",
+          "confidence": 0.6691545637349876,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "021db2abce834ba2b146f21294ce2ccb",
+      "latency_ms": 1338,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.6798002499763626,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审拒绝",
+          "confidence": 0.6238381232086124,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "021df1d1f25343369a6d009530027265",
+      "latency_ms": 1313,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.7557061813028185,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.632195511594647,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "022c8b1d9e324c94bf9a404abe470bd5",
+      "latency_ms": 1334,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.8940776460411956,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.39330723739477774,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "025dbfb8af6e4d08a1618a61665f5262",
+      "latency_ms": 926,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.7439389554145914,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.39470073320275095,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "0265f225733546209267a96a4d7a8130",
+      "latency_ms": 1097,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.637525577991227,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.44151308808369333,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "02784f3a15264b3296be2609c737b1c1",
+      "latency_ms": 970,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6518947636686268,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.41779210133995415,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "02a27816341f411fa5f663e51679ead9",
+      "latency_ms": 383,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6518947636686268,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.44892453450553044,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "02bac7e5d7f1428ca3f66a6d0f6fd391",
+      "latency_ms": 338,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.637525577991227,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.39829017440968384,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "02bd82c5f0e74a3ab6e74aa3e7401e0c",
+      "latency_ms": 1304,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审通过",
+          "pred": "预审通过",
+          "confidence": 0.8976523559172651,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "02e53d1de4344d829887d0945c519067",
+      "latency_ms": 1297,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审拒绝",
+          "confidence": 0.5699949845573954,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "02e6f5e511e24ff2b4984aef32989a90",
+      "latency_ms": 1293,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.8879876242264044,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.4201214516628328,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0346858967d646a1818f72d7ea9a00da",
+      "latency_ms": 1329,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.8815938286018441,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.3659487879723995,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "03652210e9b5492ba1ebb72e40b6c527",
+      "latency_ms": 1341,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.8678561574454184,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.32027558955273755,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "039fd315c1754b5582630168883f6d00",
+      "latency_ms": 1136,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.4277244897157563,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "03aea8fb6fef4c96a9b7b16ec88d22ec",
+      "latency_ms": 1001,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.637525577991227,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.3808419788103259,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "03b919773ec848c790d23ddc78476fdd",
+      "latency_ms": 1007,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8815938286018441,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.7571613088958069,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "03c397373fb14ec3a7c5a24c7cc67c1e",
+      "latency_ms": 965,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.4196603060152827,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "03cb796e640c44969ff1f4ba82eaf0fa",
+      "latency_ms": 921,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.778122175998967,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.48446509320701925,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "03cd22cde6174af3ba1438ee59c5f56e",
+      "latency_ms": 1464,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.40487091185361257,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "03dbf13da7b441cdb9811c767a528062",
+      "latency_ms": 1531,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6932998143038492,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.5107639292238669,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "03dd0b2d3f5c4b908c5f0650a1323f8e",
+      "latency_ms": 1531,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.767101934678807,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "预审通过",
+          "pred": "预审通过",
+          "confidence": 0.8304257585554253,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "04216f56cf15440ea4b83545064a0c3f",
+      "latency_ms": 1519,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.936892368084393,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "未发送二维码",
+          "confidence": 0.5263491868521826,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "042ac765de464ae295ee86261453e715",
+      "latency_ms": 1327,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8604937671763584,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.46633030518584384,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "043eea36706949a5847221fb0cb834e3",
+      "latency_ms": 1466,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.5313278281391198,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.44917611121612905,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "0453a25d41444b17a3951fb18ce06b4c",
+      "latency_ms": 1313,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.7318060856600669,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.6102864437681353,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "045dd4f5e6914e368111de3d81dcccd7",
+      "latency_ms": 1313,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.9759090252955993,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.3835106214803172,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "046e9778b33f46cf90b5dfb516ae7fc5",
+      "latency_ms": 1111,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.788764540067536,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "预审拒绝",
+          "confidence": 0.6178242996352978,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0474db1a09ec428cbb5332c4013f04f2",
+      "latency_ms": 763,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审拒绝",
+          "confidence": 0.5676474380920582,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "04956ffe29f1480ca2e2da7bdcc32547",
+      "latency_ms": 2122,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.35675922816146344,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "04a1ca29935d484da6c6a75c559cfff0",
+      "latency_ms": 2122,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.5706729942698402,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "04a37324705b489591968090cfdcb8b8",
+      "latency_ms": 2122,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.7193152314525416,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.45301196837580743,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "04bb3496249042f388ed1714604e66ed",
+      "latency_ms": 2121,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.4148090384425492,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "04d75f11ad474667879557a6e05e5cf2",
+      "latency_ms": 1512,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.608060011110835,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.553455471948951,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "04d94a06214e4189b47f0ccb6e7f5877",
+      "latency_ms": 1510,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.5777854893190272,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.32923382712240423,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "04e82fe1196246089346cfb274368bd0",
+      "latency_ms": 1509,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.6659927647326706,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.6769296446004783,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "04eb09f1edc5404eb231e5286d708890",
+      "latency_ms": 1171,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6518947636686268,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.3935813851061021,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "04ef313c207a455f8230e8588d09b314",
+      "latency_ms": 1367,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.41534304241767417,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "054b582d1562449f90b029c60eb310c9",
+      "latency_ms": 1356,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.4269622554908251,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "05576655ffaf465daf33ca91884785b4",
+      "latency_ms": 1355,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.3925006622507885,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "05635cb74867480ea5f4d6b2fed195a7",
+      "latency_ms": 1142,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.637525577991227,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.4027106849942217,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "05764a75045645a3bdb5dad2e3e91ff1",
+      "latency_ms": 842,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.778122175998967,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "预审拒绝",
+          "confidence": 0.5498306911385973,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "057b065c71be496ca49f9c711f2ed66e",
+      "latency_ms": 960,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "正在评估中",
+          "pred": "正在评估中",
+          "confidence": 0.9203253283037116,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.3401993864834155,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "05936fb004c8466a928b41bef363aeb5",
+      "latency_ms": 1350,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.5156793174877148,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审通过",
+          "pred": "预审通过",
+          "confidence": 0.9007357093898113,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "05bf459d6536468286c571f71c595b5c",
+      "latency_ms": 1358,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.788764540067536,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.44742404995803164,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "0629cd5859c348e8bd242256a42f03d5",
+      "latency_ms": 628,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.44107808941771404,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "0684511d893b41d9824468bbb18846c4",
+      "latency_ms": 508,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.42562476682301376,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "06b9e1566ac543dc8325065c393ea05f",
+      "latency_ms": 1826,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "预审拒绝",
+          "confidence": 0.5996950004491433,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "06ef292b3cd043b9808779584add6327",
+      "latency_ms": 1477,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6518947636686268,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送",
+          "confidence": 0.42625929518010963,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "072c0e6736b04a65bcdc031c00f3cb3c",
+      "latency_ms": 1487,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.7318060856600669,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "二维码已发送等待用户填报",
+          "confidence": 0.7180295506516378,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "077ffaec30444adda8d60f31ac56c106",
+      "latency_ms": 1485,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "预审拒绝",
+          "confidence": 0.629929732948186,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0781f3c0d1ca4999bea58b77890cdb2e",
+      "latency_ms": 1457,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "预审拒绝",
+          "confidence": 0.8335874093497678,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "07949580b3534f27bb2e45b727ee9b47",
+      "latency_ms": 1474,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.4104107324447028,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "07c7107251024dc4b8c6fdf2e6fc94cd",
+      "latency_ms": 872,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "二维码已发送",
+          "confidence": 0.39750477383993943,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "07e365e0b34c493d867079099ca77e82",
+      "latency_ms": 801,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审拒绝",
+          "confidence": 0.6369112969722144,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "07f349750adb44498f04f2e8abbc90eb",
+      "latency_ms": 695,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.788764540067536,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.41743249848147596,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "07ff69f0ab8b4134b83b900ae7258584",
+      "latency_ms": 629,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8604937671763584,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审拒绝",
+          "confidence": 0.4431194026159336,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "083827d7ddfe471ba9f31c29c03ea424",
+      "latency_ms": 1407,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审拒绝",
+          "confidence": 0.5182954454284026,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "084532af686f4e8c92e965dfad8d0896",
+      "latency_ms": 1395,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.844739173437523,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "未发送二维码",
+          "confidence": 0.34867683592541754,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "08457ec13fd54082baecc5d00dafb265",
+      "latency_ms": 1391,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.7064759712765732,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "二维码已发送",
+          "confidence": 0.39935122090157094,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "086acac06ff4459aab5587beadf30593",
+      "latency_ms": 1392,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.42876708079225145,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "086b815d4cfc468bbf6542fefa4c17d2",
+      "latency_ms": 1389,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "预审拒绝",
+          "confidence": 0.5229291312506693,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "088817c703c04ff485c855e9e7f4aa79",
+      "latency_ms": 1416,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.8815938286018441,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "预审拒绝",
+          "pred": "预审通过",
+          "confidence": 0.54283826003732,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "088b1c7df8e7458bb08c6ca0677b5b60",
+      "latency_ms": 805,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.6518947636686268,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.3942395250242791,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "088e6897967240ed82292110d56f4d96",
+      "latency_ms": 855,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.608060011110835,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.3815492084545365,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "08a87f88ff8a46839b2da18be2649b33",
+      "latency_ms": 636,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "正在评估中",
+          "confidence": 0.9203253283037116,
+          "ok": false
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审通过",
+          "confidence": 0.3466941760740411,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "08ef0753f0ae489f9a6ccb18a1c66903",
+      "latency_ms": 556,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.5930110454411601,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "二维码已发送",
+          "pred": "预审拒绝",
+          "confidence": 0.9109192098517639,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0922cab5d6944514b91768049a9ff908",
+      "latency_ms": 523,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.5930110454411601,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "预审拒绝",
+          "confidence": 0.6397863237850495,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0935fa20838a4d23aeeedb8b72ce5a46",
+      "latency_ms": 515,
+      "error": "",
+      "fields": {
+        "车辆评估状态": {
+          "truth": "未提供",
+          "pred": "未提供",
+          "confidence": 0.5930110454411601,
+          "ok": true
+        },
+        "预审状态": {
+          "truth": "未发送二维码",
+          "pred": "二维码已发送",
+          "confidence": 0.42800552690528293,
+          "ok": false
+        }
+      }
+    }
+  ],
+  "elapsed_s": 16.4
+}

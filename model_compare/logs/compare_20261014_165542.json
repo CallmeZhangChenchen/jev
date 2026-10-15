@@ -1,0 +1,276 @@
+{
+  "time": "2026-10-14 16:55:42",
+  "agent_id": "10001001",
+  "datasets": {
+    "positive": "positive",
+    "negative": "negative"
+  },
+  "results": [
+    {
+      "model": "Intern-Decision-4B",
+      "positive_hit": {
+        "ok": 4,
+        "total": 8
+      },
+      "negative_pass": {
+        "ok": 9,
+        "total": 9
+      },
+      "accuracy": {
+        "ok": 13,
+        "total": 17
+      },
+      "errors": 0,
+      "avg_latency_ms": 281.1,
+      "category_hit": {
+        "不耐烦": {
+          "hit": 0,
+          "total": 1
+        },
+        "合规禁用词": {
+          "hit": 0,
+          "total": 1
+        },
+        "提前还款违规": {
+          "hit": 0,
+          "total": 2
+        },
+        "服务态度": {
+          "hit": 4,
+          "total": 4
+        }
+      },
+      "records": [
+        {
+          "group": "正例",
+          "text": "你傻逼吧,脑子有病啊",
+          "expect_hit": true,
+          "expect_category": "服务态度",
+          "hit": true,
+          "categories": [
+            "话术违规"
+          ],
+          "unclassified_hit": true,
+          "correct": true,
+          "latency_ms": 274,
+          "error": "",
+          "raw": "noul=0.4686721718608801 (阈值 0.5, 低于阈值判违规), decision=no"
+        },
+        {
+          "group": "正例",
+          "text": "滚蛋,不想跟你说",
+          "expect_hit": true,
+          "expect_category": "服务态度",
+          "hit": true,
+          "categories": [
+            "话术违规"
+          ],
+          "unclassified_hit": true,
+          "correct": true,
+          "latency_ms": 264,
+          "error": "",
+          "raw": "noul=0.34810523633137336 (阈值 0.5, 低于阈值判违规), decision=no"
+        },
+        {
+          "group": "正例",
+          "text": "卧槽,我靠这都不会",
+          "expect_hit": true,
+          "expect_category": "服务态度",
+          "hit": true,
+          "categories": [
+            "话术违规"
+          ],
+          "unclassified_hit": true,
+          "correct": true,
+          "latency_ms": 275,
+          "error": "",
+          "raw": "noul=0.4686721718608801 (阈值 0.5, 低于阈值判违规), decision=no"
+        },
+        {
+          "group": "正例",
+          "text": "听不懂人话吗,还要我说几遍",
+          "expect_hit": true,
+          "expect_category": "不耐烦",
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": false,
+          "latency_ms": 299,
+          "error": "",
+          "raw": "noul=0.5930110454411601 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "正例",
+          "text": "还要不要大绿本了,不办就拿不回大本",
+          "expect_hit": true,
+          "expect_category": "合规禁用词",
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": false,
+          "latency_ms": 269,
+          "error": "",
+          "raw": "noul=0.608060011110835 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "正例",
+          "text": "可以提前结清，但每个资方对提前还款的限制不一样，具体以资方合同为准。等方案出来后，我会根据您匹配的资方详细告知您。您要是觉得期数太长，也可以先正常走流程下款，后面再根据资方政策提前还，提前还的部分不收利息。您看是有什么顾虑吗？",
+          "expect_hit": true,
+          "expect_category": "提前还款违规",
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": false,
+          "latency_ms": 281,
+          "error": "",
+          "raw": "noul=0.6932998143038492 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "正例",
+          "text": "不是随借随还，钱一次性到您账户，按分期还，中途想提前结清也行，提前还的部分不收利息。 && 利率合同里会显示，给您匹配的是最优惠的方案，具体等方案出来您就能看到。您把行驶证发我，几分钟就能出方案，我给您看下实际额度和利率。",
+          "expect_hit": true,
+          "expect_category": "提前还款违规",
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": false,
+          "latency_ms": 369,
+          "error": "",
+          "raw": "noul=0.5 (阈值 0.5, 低于阈值判违规), decision=no"
+        },
+        {
+          "group": "正例",
+          "text": "好的，你妹的行驶证是否可以用",
+          "expect_hit": true,
+          "expect_category": "服务态度",
+          "hit": true,
+          "categories": [
+            "话术违规"
+          ],
+          "unclassified_hit": true,
+          "correct": true,
+          "latency_ms": 274,
+          "error": "",
+          "raw": "noul=0.30670018569615076 (阈值 0.5, 低于阈值判违规), decision=no"
+        },
+        {
+          "group": "负例",
+          "text": "您好,我是您的金融顾问,有什么可以帮您的",
+          "expect_hit": false,
+          "expect_category": null,
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": true,
+          "latency_ms": 302,
+          "error": "",
+          "raw": "noul=0.8604937671763584 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "负例",
+          "text": "咱们这笔是由匹配的资方直接放款的,您放心",
+          "expect_hit": false,
+          "expect_category": null,
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": true,
+          "latency_ms": 277,
+          "error": "",
+          "raw": "noul=0.799028310455341 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "负例",
+          "text": "提前还款的具体费用要以合同约定为准,我帮您确认一下",
+          "expect_hit": false,
+          "expect_category": null,
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": true,
+          "latency_ms": 270,
+          "error": "",
+          "raw": "noul=0.8748864949022742 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "负例",
+          "text": "提前还款可能会按合同约定收取一定利息或违约金,我先帮您核实",
+          "expect_hit": false,
+          "expect_category": null,
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": true,
+          "latency_ms": 270,
+          "error": "",
+          "raw": "noul=0.8363317223730603 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "负例",
+          "text": "资金是由银行或融资租赁公司等匹配资方发放的",
+          "expect_hit": false,
+          "expect_category": null,
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": true,
+          "latency_ms": 269,
+          "error": "",
+          "raw": "noul=0.7193152314525416 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "负例",
+          "text": "您先别着急,我一步步教您怎么操作",
+          "expect_hit": false,
+          "expect_category": null,
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": true,
+          "latency_ms": 271,
+          "error": "",
+          "raw": "noul=0.844739173437523 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "负例",
+          "text": "登记证后续会按合同约定还给您的,请放心",
+          "expect_hit": false,
+          "expect_category": null,
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": true,
+          "latency_ms": 270,
+          "error": "",
+          "raw": "noul=0.799028310455341 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "负例",
+          "text": "您好～之前提到的合作机构申请链接还在有效期内，他们的准入条件更宽松。有资金需求的话可以点进去看看方案，不合适也没关系的。 && 点击链接即可申请：t.yxqiche.com/apPLnf",
+          "expect_hit": false,
+          "expect_category": null,
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": true,
+          "latency_ms": 274,
+          "error": "",
+          "raw": "noul=0.8184242551251981 (阈值 0.5, 低于阈值判违规), decision=yes"
+        },
+        {
+          "group": "负例",
+          "text": "您好～之前提到的合作机构申请链接还在有效期内，他们的准入条件更宽松。有资金需求的话可以点进去看看方案，不合适也没关系的。 && 点击链接即可申请：t.yxqiche.com/BEkltF",
+          "expect_hit": false,
+          "expect_category": null,
+          "hit": false,
+          "categories": [],
+          "unclassified_hit": false,
+          "correct": true,
+          "latency_ms": 271,
+          "error": "",
+          "raw": "noul=0.8184242551251981 (阈值 0.5, 低于阈值判违规), decision=yes"
+        }
+      ]
+    }
+  ]
+}

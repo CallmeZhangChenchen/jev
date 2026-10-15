@@ -1,0 +1,3135 @@
+{
+  "file": "v5",
+  "model": "Intern-Decision-4B",
+  "fields": {
+    "客户提交登记证状态": {
+      "correct": 60,
+      "total": 100,
+      "acc": 60.0
+    },
+    "客户提额状态": {
+      "correct": 75,
+      "total": 100,
+      "acc": 75.0
+    },
+    "客户签约状态": {
+      "correct": 45,
+      "total": 100,
+      "acc": 45.0
+    },
+    "是否要求融资额": {
+      "correct": 82,
+      "total": 100,
+      "acc": 82.0
+    }
+  },
+  "micro": {
+    "correct": 262,
+    "total": 400
+  },
+  "errors": 0,
+  "avg_latency_ms": 3705,
+  "results": [
+    {
+      "session_id": "a76d69484675432e99c25031e8f9efb5",
+      "latency_ms": 4997,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.4434838070002053,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.608060011110835,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8678561574454184,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "f5ab076a32bb4658a534d3a4b060acd0",
+      "latency_ms": 4999,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "已提交",
+          "confidence": 0.7409240241997488,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "待确认",
+          "pred": "无需提额",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5156793174877148,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "是",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "ed1779945dc9475f9ee1f01df08ed4d8",
+      "latency_ms": 4643,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.570658390138143,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5313278281391198,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.788764540067536,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "4c0781ff33a44a27b642b93254ed1204",
+      "latency_ms": 4644,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8070273658636237,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.608060011110835,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.608060011110835,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.7439389554145914,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "18788bca23d342979096137af4d991cd",
+      "latency_ms": 4644,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.7974937127452465,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "待确认",
+          "pred": "无需提额",
+          "confidence": 0.608060011110835,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "是",
+          "confidence": 0.799028310455341,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "a2e230ada2934369810b565c96b8fdeb",
+      "latency_ms": 4997,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8845836958178401,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.5313278281391198,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.778122175998967,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "5bd34c36203443b19d07bd153bb506de",
+      "latency_ms": 4996,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.5518599479484263,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.778122175998967,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "6b8dcdd5ab954817ba6573973d34bf28",
+      "latency_ms": 4994,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.941825941823481,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7557061813028185,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "待签约",
+          "confidence": 0.767101934678807,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.844739173437523,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "6ca66c5d32904c5c94adba4761b7f1d7",
+      "latency_ms": 1587,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.9098471807124453,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.637525577991227,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8275619327448428,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "a865715fdc2c439aac2422a94d946721",
+      "latency_ms": 1585,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.648669075280712,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6518947636686268,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5624106420506467,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.799028310455341,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "b85b6672ec1b4b5c934fda6c41de2361",
+      "latency_ms": 1591,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.46742783240745756,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.799028310455341,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "cb08a5f3177a4cd2b4302537d2c4aeaf",
+      "latency_ms": 4852,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.48160320482867636,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5156793174877148,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8940776460411956,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "51289f39fca8464c8a2bc5aceca5ad0c",
+      "latency_ms": 4851,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.7804722485798925,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.844739173437523,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.6798002499763626,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.9156019658234928,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "9d1325452e714b2ab0a8ed2be6d60168",
+      "latency_ms": 4849,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.41277373865763395,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7439389554145914,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "568647833ec84bdd9a16cb2e78e67263",
+      "latency_ms": 3713,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.6774268008066143,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.7318060856600669,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8275619327448428,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "cf444a75efd348e5bd8656618dbb6d93",
+      "latency_ms": 4849,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.4555974630712899,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.7557061813028185,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "是",
+          "pred": "否",
+          "confidence": 0.767101934678807,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "dca906f08d2444bea0c4016367dd30a0",
+      "latency_ms": 4583,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.948557798828124,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8748864949022742,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.9405016353866033,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "是",
+          "confidence": 0.5624106420506467,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "6b0a89dc4863495f8bde789d230270ea",
+      "latency_ms": 4585,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.9199580828054892,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.788764540067536,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "待签约",
+          "confidence": 0.7557061813028185,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8815938286018441,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "f56370371e654d96af6e0bf9c0cc714b",
+      "latency_ms": 4578,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.8478501210638775,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8527907640733415,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5777854893190272,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "be1550c1e9274520b12626d0a16224cb",
+      "latency_ms": 2427,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.8034626575036276,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.608060011110835,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8678561574454184,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "3b72b7c53c754449891b0135b5f9b4c2",
+      "latency_ms": 4331,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.938291740342913,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7439389554145914,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "未到签约阶段",
+          "confidence": 0.778122175998967,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.6932998143038492,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "9833922c743b488196138b8f452d1f9a",
+      "latency_ms": 4329,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.7887778099202812,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8604937671763584,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5469149563843178,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8879876242264044,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "b8003c48ff13458aa34fd18c401147ae",
+      "latency_ms": 4328,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.948557798828124,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.788764540067536,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "未到签约阶段",
+          "confidence": 0.5313278281391198,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "2bea5b807ec245d8a2c12172b8762dc8",
+      "latency_ms": 4329,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.7511037705096951,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.608060011110835,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5930110454411601,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.799028310455341,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "c377e92f3f514294a502987a5bfbb00c",
+      "latency_ms": 3712,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8034626575036276,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5777854893190272,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5777854893190272,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8815938286018441,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "b06d72cd9bee49e9b0477b1438b7cd42",
+      "latency_ms": 3361,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.829503098055678,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8604937671763584,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.608060011110835,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8940776460411956,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "49b9cb5accdb46198e7108080ff56b67",
+      "latency_ms": 3359,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "未到提交阶段",
+          "confidence": 0.5382555047693012,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.5469149563843178,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.608060011110835,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.778122175998967,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "5f8b4be499764cc0af456f137dcb9a3a",
+      "latency_ms": 3387,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.9496780672425486,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "待签约",
+          "confidence": 0.9203253283037116,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "7033eca5c02b4c0690f23698eef4cca1",
+      "latency_ms": 3025,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "未到提交阶段",
+          "confidence": 0.6229250480696653,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.5469149563843178,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.788764540067536,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.767101934678807,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "b5f8d60277a8416791e55680fa5c84ea",
+      "latency_ms": 3024,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "已提交",
+          "confidence": 0.5778048999547336,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8604937671763584,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5777854893190272,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8678561574454184,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "8436af19f20346759e2a79504ca12ac3",
+      "latency_ms": 3024,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.5977053435840949,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8678561574454184,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "41b56f63d1b04fa3aabbe950ce6db714",
+      "latency_ms": 3022,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.4043378025368724,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.6798002499763626,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5469149563843178,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.844739173437523,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "77edb2e5b37b403aaf9fef7457b08e89",
+      "latency_ms": 3025,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.7418604098542927,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.5156793174877148,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.7318060856600669,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.788764540067536,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "44d3c2216d2841a5b680b3d39f2f7f16",
+      "latency_ms": 3020,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.4198915918597355,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.637525577991227,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5930110454411601,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8527907640733415,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "6fd50daaded34412b467934c777e559b",
+      "latency_ms": 2875,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8186395552088676,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.844739173437523,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.637525577991227,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8678561574454184,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "221cc8a599d1488c87f70f80df67027a",
+      "latency_ms": 2875,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "未到提交阶段",
+          "confidence": 0.6540437401872584,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.767101934678807,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.778122175998967,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "6cf0c6b6d7d94d5597a4f685302bb6ce",
+      "latency_ms": 4449,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.6209817155488141,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8604937671763584,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5313278281391198,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.844739173437523,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "0e39949e39e34033b96d2a5816b3ea61",
+      "latency_ms": 4449,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "未到提交阶段",
+          "confidence": 0.45968245004473307,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "396561d1ce964e989d70c5227227929e",
+      "latency_ms": 4448,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.5121360039806574,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "待确认",
+          "pred": "无需提额",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.5930110454411601,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "3dc3306f7c78406aae8a23d73d6977aa",
+      "latency_ms": 4447,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.7600944358090083,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7439389554145914,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.637525577991227,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "是",
+          "pred": "否",
+          "confidence": 0.7193152314525416,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0d63eb9a9e1144b8a8f03667e71863d2",
+      "latency_ms": 4445,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.6717693496985322,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5930110454411601,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.788764540067536,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "230e4493f49a415ea877f715e1de8a41",
+      "latency_ms": 4444,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.5775273881524557,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.637525577991227,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "6003ea8128434801b76e2fc32ee4bd65",
+      "latency_ms": 4250,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.9483315402973791,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7193152314525416,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "待签约",
+          "confidence": 0.799028310455341,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "2184cfb06ab74cfa9736ceb436e87c5a",
+      "latency_ms": 4246,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.45968245004473307,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.608060011110835,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.608060011110835,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "dd986fd5247245abb9b99acae3f6daac",
+      "latency_ms": 3472,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.9595288290456978,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.9248060506082927,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "待签约",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8604937671763584,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "95f6e17b0889461dbce6cf43d8212b42",
+      "latency_ms": 3479,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.9078034754055523,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5469149563843178,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "是",
+          "pred": "否",
+          "confidence": 0.5624106420506467,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "d26b3c975a4945d2a698586e5f3e4b44",
+      "latency_ms": 3478,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.9363266000803584,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7318060856600669,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "待签约",
+          "confidence": 0.5313278281391198,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.7064759712765732,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "cd06038ea98d40ec9dc0d672689f4a34",
+      "latency_ms": 3478,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.42468868420481354,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6518947636686268,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.637525577991227,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "是",
+          "pred": "否",
+          "confidence": 0.6798002499763626,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "898a435acfa64cc1ab54235a256e1aa5",
+      "latency_ms": 3476,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "未到提交阶段",
+          "confidence": 0.50839583247006,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.5313278281391198,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5469149563843178,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.767101934678807,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "1dedfe782fa54f9da591ba595fd2facb",
+      "latency_ms": 3475,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.6319965189827859,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5313278281391198,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "dee9d2b688594dda97247426b2301147",
+      "latency_ms": 3476,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8245966552482138,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5624106420506467,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8815938286018441,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "28d216de00584742b8648d30a59dd1cc",
+      "latency_ms": 3468,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.6623675120954924,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.608060011110835,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8604937671763584,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "488d98acb625458cb055f81caef4ac57",
+      "latency_ms": 3487,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8223426360308026,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.608060011110835,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "6058b0abfcad4294afa094f85f082a5e",
+      "latency_ms": 3485,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.9159429662541674,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7193152314525416,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5156793174877148,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.778122175998967,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "41de7ebd2d5f40909b16813316b7130f",
+      "latency_ms": 3482,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.7830110183706214,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5469149563843178,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8748864949022742,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "98715b09515d43f3ae7efffdfdce168e",
+      "latency_ms": 3481,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.5748160550158662,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "待确认",
+          "pred": "无需提额",
+          "confidence": 0.5930110454411601,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5156793174877148,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "是",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "2d6b6f6c09534b5394668b1ccd86d774",
+      "latency_ms": 3479,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.7985411341299393,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6659927647326706,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "是",
+          "pred": "否",
+          "confidence": 0.7557061813028185,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "f93ab173fb8045c694df2df269048cf0",
+      "latency_ms": 3477,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.47589001837133027,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5777854893190272,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5777854893190272,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8815938286018441,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "ab8f95632a9043c0a611ab55b4977436",
+      "latency_ms": 3478,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.5069610371436882,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.6518947636686268,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.7193152314525416,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "b894c6baea5249f4bfcc85c5fa325fcc",
+      "latency_ms": 3479,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8113885551048988,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.7318060856600669,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8748864949022742,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "4956a89a3a5549a68496b726876d5839",
+      "latency_ms": 3475,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.5223177156389137,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.767101934678807,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5469149563843178,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "1696cc90e6d0498ea5ff131428f3a0b5",
+      "latency_ms": 3475,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "未到提交阶段",
+          "confidence": 0.5311913125612795,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.5313278281391198,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.788764540067536,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "是",
+          "pred": "否",
+          "confidence": 0.5,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "908fbe47b1494ca4bc9934a40baabb00",
+      "latency_ms": 3485,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8515904456097371,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8879876242264044,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.8998738837161642,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8275619327448428,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "afd4d247804c47d487865261600d8bad",
+      "latency_ms": 3484,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8515904456097371,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8275619327448428,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8678561574454184,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "4925d56b12054196b6efa538a142fad3",
+      "latency_ms": 3483,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.7798668927662274,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.767101934678807,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "是",
+          "pred": "否",
+          "confidence": 0.5313278281391198,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "4ba49d596f4145d2930c768c1e1ed6c9",
+      "latency_ms": 3485,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.9403317990778695,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7318060856600669,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "未到签约阶段",
+          "confidence": 0.7064759712765732,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.637525577991227,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "42287955035443ab8e5782da12a21644",
+      "latency_ms": 3474,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "未到提交阶段",
+          "confidence": 0.5347288827610865,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.608060011110835,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5777854893190272,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.7318060856600669,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "3cb241f1c0c74596b629bd73612db98c",
+      "latency_ms": 3474,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8186395552088676,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7318060856600669,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.7193152314525416,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8748864949022742,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "d6bfd0f3095c4ba98305d394e57e44d1",
+      "latency_ms": 3084,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.7391913676120637,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6932998143038492,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.6659927647326706,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.767101934678807,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "7e36a49031d64810a1073101869db918",
+      "latency_ms": 3089,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "未到提交阶段",
+          "confidence": 0.4976176878195706,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5777854893190272,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.7193152314525416,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "ddf71fe9c63b482398bf6b89791d056f",
+      "latency_ms": 3089,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.7164425349896575,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.5469149563843178,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5777854893190272,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.637525577991227,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "40bd0c0b153f4cf3b162dec627ee926f",
+      "latency_ms": 3088,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.5117406952580184,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.637525577991227,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.6798002499763626,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.778122175998967,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "88e154d132094a6f9a7da279cefd7219",
+      "latency_ms": 3079,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.8766368808976979,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7439389554145914,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "待签约",
+          "confidence": 0.767101934678807,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "是",
+          "confidence": 0.5930110454411601,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "8cd173d58cd84d73ab802dee78d7d476",
+      "latency_ms": 3078,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8275732865535023,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5624106420506467,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8604937671763584,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "950a1fe0f47147de9f942c7d1ac6e940",
+      "latency_ms": 3076,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8260034184861265,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5930110454411601,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "b1e445e84b4345c0b9ac4f8afc8fc513",
+      "latency_ms": 3073,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.39121786116162954,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5930110454411601,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.7064759712765732,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8879876242264044,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "61c4f716565d439d85d96c1f92666714",
+      "latency_ms": 3489,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.8533448934411412,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8527907640733415,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.8879876242264044,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8678561574454184,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "8a42cf66e7d34d038e87894855268ec2",
+      "latency_ms": 3485,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.8348366544288454,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5313278281391198,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8275619327448428,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "849e5e5a61534ae98ae4cd4668d16f18",
+      "latency_ms": 3485,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8715600488056161,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8678561574454184,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5156793174877148,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8998738837161642,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "6c5fa359aaf54def9df7b3488c0516aa",
+      "latency_ms": 3482,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.4415525480598312,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5930110454411601,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.7193152314525416,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.7557061813028185,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "9d153e6616a94b7a9b061b0feffcbd9e",
+      "latency_ms": 3484,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.6699610822674329,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.5624106420506467,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "是",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "2e64e69871824025978fe8c4c0ecb66e",
+      "latency_ms": 3487,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.6080789693520243,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6932998143038492,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5313278281391198,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8527907640733415,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "5a21e82705784a64a05d9b00db0f20cd",
+      "latency_ms": 3484,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.6623675120954924,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "待确认",
+          "pred": "待确认",
+          "confidence": 0.5,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5469149563843178,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "是",
+          "confidence": 0.5930110454411601,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "5bc04ed4cab2480caeed0d06e4e18850",
+      "latency_ms": 3480,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.9356609917402224,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7557061813028185,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "待签约",
+          "pred": "未到签约阶段",
+          "confidence": 0.5469149563843178,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "是",
+          "pred": "否",
+          "confidence": 0.6518947636686268,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "46fabd83fe5346b4833281d0a0e14be7",
+      "latency_ms": 4151,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "未到提交阶段",
+          "confidence": 0.7093013990478874,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.799028310455341,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5777854893190272,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.778122175998967,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "0aebf6689a264df1b0eb0d4760453ba8",
+      "latency_ms": 4173,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.7465331527832685,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8940776460411956,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5469149563843178,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "是",
+          "pred": "否",
+          "confidence": 0.8940776460411956,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "0429185d7ba046fbb16512c7efddedf8",
+      "latency_ms": 4173,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.4232933640269172,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.7439389554145914,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.778122175998967,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "0d219d4d9bd349ff909db9f54f112cd7",
+      "latency_ms": 4156,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.45999381442992515,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.637525577991227,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8527907640733415,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "765308acd2464fccaba0d69ea387f638",
+      "latency_ms": 4156,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.6441910381357905,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.5930110454411601,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.7439389554145914,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.7557061813028185,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "a6849d98cb5a47e8a0a8ccf76224b277",
+      "latency_ms": 4152,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "已提交",
+          "pred": "已提交",
+          "confidence": 0.9024164895087395,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8527907640733415,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5624106420506467,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8998738837161642,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "11dbd9a8495e4a98b90ccd4dd0b1f235",
+      "latency_ms": 4152,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "未到提交阶段",
+          "confidence": 0.5193470324173584,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8998738837161642,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8879876242264044,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "0c59f03704344d9caa558398ff6aa59f",
+      "latency_ms": 4149,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.4819410680060127,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5156793174877148,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "e8070f2daacc4632b61bc47c93ace14a",
+      "latency_ms": 3627,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.6041796632540793,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7557061813028185,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.7439389554145914,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "b3605a63df6d432cadfdeb818589401b",
+      "latency_ms": 3491,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.8621259754560234,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.8089141677995819,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5777854893190272,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8275619327448428,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "48f842183ecb46b9aa5bce15c7f1a59a",
+      "latency_ms": 3497,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "已提交",
+          "confidence": 0.3946345585197905,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.5313278281391198,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8363317223730603,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "adb32aa4e2294b38a96240505edebde9",
+      "latency_ms": 3494,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.9168368722526529,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "待确认",
+          "pred": "待确认",
+          "confidence": 0.778122175998967,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "未到签约阶段",
+          "confidence": 0.788764540067536,
+          "ok": true
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "是",
+          "confidence": 0.5624106420506467,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "aae97ef6699a4503bb47167067d61437",
+      "latency_ms": 3490,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "已提交",
+          "confidence": 0.5034159219998994,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.6229063460425425,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.6229063460425425,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8527907640733415,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "1da9d19f398f44168cc0e3bdf85b7f48",
+      "latency_ms": 3494,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "待提交",
+          "confidence": 0.6777224467819144,
+          "ok": true
+        },
+        "客户提额状态": {
+          "truth": "待确认",
+          "pred": "无需提额",
+          "confidence": 0.5313278281391198,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5930110454411601,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "是",
+          "confidence": 0.608060011110835,
+          "ok": false
+        }
+      }
+    },
+    {
+      "session_id": "6927a6f9dd5043079673e7efc26c96bb",
+      "latency_ms": 3480,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "待提交",
+          "pred": "已提交",
+          "confidence": 0.6993354607136348,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "无需提额",
+          "confidence": 0.7557061813028185,
+          "ok": true
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5624106420506467,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.8184242551251981,
+          "ok": true
+        }
+      }
+    },
+    {
+      "session_id": "09822ca4a681426b8c72d729521e471e",
+      "latency_ms": 3480,
+      "error": "",
+      "fields": {
+        "客户提交登记证状态": {
+          "truth": "未到提交阶段",
+          "pred": "待提交",
+          "confidence": 0.40805637630113617,
+          "ok": false
+        },
+        "客户提额状态": {
+          "truth": "无需提额",
+          "pred": "待确认",
+          "confidence": 0.5624106420506467,
+          "ok": false
+        },
+        "客户签约状态": {
+          "truth": "未到签约阶段",
+          "pred": "待签约",
+          "confidence": 0.5469149563843178,
+          "ok": false
+        },
+        "是否要求融资额": {
+          "truth": "否",
+          "pred": "否",
+          "confidence": 0.6932998143038492,
+          "ok": true
+        }
+      }
+    }
+  ],
+  "elapsed_s": 46.4
+}
