@@ -35,9 +35,14 @@ DATA_FILES = {
 }
 PREDICT_URL = "http://10.10.200.201:8000/predict"   # Intern-Decision-4B
 DECIDE_URL = "http://10.10.200.201:8000/decide"     # jev
+D3_URL = "http://localhost:8000/predict"            # d3(本地,请求体不带 model)
 CLEF_URL = "http://localhost:30000/v1/systemone"    # clef
+OPENJEV_URL = "https://api.codiv.ai/v1/systemone"    # openjev(codiv,需鉴权)
+OPENJEV_KEY = "sk-codiv-5TplzGMkVZwHj1p1SjUFuCPS4dGhdyByqmP8YXko"
 INTERN_MODEL = "Intern-Decision-4B"
+D3_MODEL = None            # d3 请求体不带 model 字段
 CLEF_MODEL = "Cloudflare/clef"
+OPENJEV_MODEL = "openjev-latest"
 EMPTY_LABEL = "未提供"        # 空字符串取值的候选标签
 MSG_CHAR_CAP = None           # 单条消息截断(None=不截断)
 CTX_CHAR_CAP = None           # 整段对话截断(None=不截断;实测前100条最长 13226 字符)
@@ -45,10 +50,13 @@ WORKERS = 8
 RESULT_DIR = DIR / "results"
 
 
-def http_json(url, payload, timeout=120):
+def http_json(url, payload, timeout=120, headers=None):
+    h = {"Content-Type": "application/json"}
+    if headers:
+        h.update(headers)
     req = urllib.request.Request(
         url, data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-        headers={"Content-Type": "application/json"})
+        headers=h)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return json.loads(r.read().decode("utf-8"))
 
@@ -138,20 +146,22 @@ def run_threads(tasks, fn, tag):
     return results
 
 
-def run_systemone(sessions, fields, url, model, tag):
-    """Intern-Decision-4B / clef 共用:每 session 一次调用,带全部字段
+def run_systemone(sessions, fields, url, model, tag, headers=None):
+    """Intern-Decision-4B / clef / openjev / d3 共用:每 session 一次调用,带全部字段
 
-    两者同属 systemone 协议,questions dict 多字段,choice criteria 必须是 dict。
+    以上同属 systemone 协议,questions dict 多字段,choice criteria 必须是 dict。
+    openjev 需 Bearer 鉴权(headers);d3 请求体不带 model(model=None 时省略该字段)。
     """
     def one(s):
         questions = {f: {"type": "choice", "instructions": instr(f),
                          "criteria": {v: v for v in opts}}
                      for f, opts in fields.items()}
+        payload = {"state": build_context(s["chat_messages"]), "questions": questions}
+        if model:
+            payload["model"] = model
         t0 = time.time()
         try:
-            data = http_json(url, {"model": model,
-                                   "state": build_context(s["chat_messages"]),
-                                   "questions": questions})
+            data = http_json(url, payload, headers=headers)
             answers = data.get("answers", {})
             preds = {}
             for f in fields:
@@ -170,9 +180,20 @@ def run_intern(sessions, fields):
     return run_systemone(sessions, fields, PREDICT_URL, INTERN_MODEL, INTERN_MODEL)
 
 
+def run_d3(sessions, fields):
+    """d3: POST localhost:8000/predict,与 Intern 同协议但不带 model"""
+    return run_systemone(sessions, fields, D3_URL, D3_MODEL, "d3")
+
+
 def run_clef(sessions, fields):
     """clef: POST /v1/systemone,与 Intern 同协议"""
     return run_systemone(sessions, fields, CLEF_URL, CLEF_MODEL, "clef")
+
+
+def run_openjev(sessions, fields):
+    """openjev: POST codiv.ai /v1/systemone,需 Bearer 鉴权"""
+    return run_systemone(sessions, fields, OPENJEV_URL, OPENJEV_MODEL, "openjev",
+                         headers={"Authorization": f"Bearer {OPENJEV_KEY}"})
 
 
 def run_jev(sessions, fields):
@@ -238,16 +259,17 @@ def summarize(file_key, model, fields, results):
 def main():
     ap = argparse.ArgumentParser(description="从历史对话提取 profile_data(仅枚举字段)")
     ap.add_argument("--file", default="both", choices=["v4", "v5", "both"])
-    ap.add_argument("--model", default="clef",
-                    choices=["Intern-Decision-4B", "jev", "clef", "both", "all"])
+    ap.add_argument("--model", default="d3",
+                    choices=["Intern-Decision-4B", "jev", "clef", "openjev", "d3", "both", "all"])
     ap.add_argument("--limit", type=int, default=100)
     args = ap.parse_args()
 
     RESULT_DIR.mkdir(exist_ok=True)
     files = list(DATA_FILES) if args.file == "both" else [args.file]
-    _ALL = [INTERN_MODEL, "jev", "clef"]
-    models = _ALL if args.model in ("all", "both") \
-        else [args.model]
+    _ALL = [INTERN_MODEL, "jev", "clef", "openjev", "d3"]
+    models = _ALL if args.model in ("all", "both") else [args.model]
+    runners = {INTERN_MODEL: run_intern, "jev": run_jev,
+               "clef": run_clef, "openjev": run_openjev, "d3": run_d3}
 
     summaries = []
     for fk in files:
@@ -258,9 +280,7 @@ def main():
         for model in models:
             print(f"-- {model} --")
             t0 = time.time()
-            results = run_intern(sessions, fields) if model == INTERN_MODEL \
-                else run_clef(sessions, fields) if model == "clef" \
-                else run_jev(sessions, fields)
+            results = runners[model](sessions, fields)
             summ = summarize(fk, model, fields, results)
             summ["elapsed_s"] = round(time.time() - t0, 1)
             summaries.append(summ)
