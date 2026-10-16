@@ -37,12 +37,11 @@ PREDICT_URL = "http://10.10.200.201:8000/predict"   # Intern-Decision-4B
 DECIDE_URL = "http://10.10.200.201:8000/decide"     # jev
 D3_URL = "http://localhost:8000/predict"            # d3(本地,请求体不带 model)
 CLEF_URL = "http://localhost:30000/v1/systemone"    # clef
-OPENJEV_URL = "https://api.codiv.ai/v1/systemone"    # openjev(codiv,需鉴权)
-OPENJEV_KEY = "sk-codiv-5TplzGMkVZwHj1p1SjUFuCPS4dGhdyByqmP8YXko"
+OPENJEV_URL = "http://localhost:8011/v1/systemone"   # openjev(本地自部署)
 INTERN_MODEL = "Intern-Decision-4B"
 D3_MODEL = None            # d3 请求体不带 model 字段
 CLEF_MODEL = "Cloudflare/clef"
-OPENJEV_MODEL = "openjev-latest"
+OPENJEV_MODEL = "jev-latest"
 EMPTY_LABEL = "未提供"        # 空字符串取值的候选标签
 MSG_CHAR_CAP = None           # 单条消息截断(None=不截断)
 CTX_CHAR_CAP = None           # 整段对话截断(None=不截断;实测前100条最长 13226 字符)
@@ -191,9 +190,8 @@ def run_clef(sessions, fields):
 
 
 def run_openjev(sessions, fields):
-    """openjev: POST codiv.ai /v1/systemone,需 Bearer 鉴权"""
-    return run_systemone(sessions, fields, OPENJEV_URL, OPENJEV_MODEL, "openjev",
-                         headers={"Authorization": f"Bearer {OPENJEV_KEY}"})
+    """openjev: POST 本地 8011 /v1/systemone,无鉴权"""
+    return run_systemone(sessions, fields, OPENJEV_URL, OPENJEV_MODEL, "openjev")
 
 
 def run_jev(sessions, fields):
